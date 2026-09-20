@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <!-- Circular text paths -->
+    <path id="text-arc-top" d="M 50 200 A 150 150 0 1 1 350 200" fill="none" />
+    <path id="text-arc-bottom" d="M 68 220 A 140 140 0 0 0 332 220" fill="none" />
+    <linearGradient id="gold-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E5D193" />
+      <stop offset="50%" stop-color="#C5A859" />
+      <stop offset="100%" stop-color="#9C7F31" />
+    </linearGradient>
+    <radialGradient id="navy-grad" cx="50%" cy="50%" r="50%">
+      <stop offset="60%" stop-color="#0F2042" />
+      <stop offset="100%" stop-color="#08142C" />
+    </radialGradient>
+  </defs>
+
+  <!-- Outer background circle -->
+  <circle cx="200" cy="200" r="195" fill="url(#navy-grad)" stroke="url(#gold-grad)" stroke-width="7" />
+  
+  <!-- Outer decorative border ring -->
+  <circle cx="200" cy="200" r="186" fill="none" stroke="#C5A859" stroke-width="1.8" />
+  
+  <!-- Middle separator ring -->
+  <circle cx="200" cy="200" r="142" fill="none" stroke="#C5A859" stroke-width="2" />
+  <circle cx="200" cy="200" r="139" fill="url(#navy-grad)" />
+
+  <!-- Top Curved Text: UNIVERSITY OF THEOLOGY -->
+  <text font-family="'Times New Roman', 'Playfair Display', Georgia, serif" font-size="20.5" font-weight="bold" fill="#FFFFFF" letter-spacing="4.5">
+    <textPath href="#text-arc-top" startOffset="50%" text-anchor="middle">
+      ★ UNIVERSITY OF THEOLOGY ★
+    </textPath>
+  </text>
+
+  <!-- Bottom Curved Text: LOS ANGELES -->
+  <text font-family="'Times New Roman', 'Playfair Display', Georgia, serif" font-size="21" font-weight="bold" fill="#FFFFFF" letter-spacing="5.5">
+    <textPath href="#text-arc-bottom" startOffset="50%" text-anchor="middle">
+      LOS ANGELES
+    </textPath>
+  </text>
+
+  <!-- Decorative small dots on ring -->
+  <circle cx="95" cy="235" r="3.5" fill="#FFFFFF" />
+  <circle cx="108" cy="250" r="3.5" fill="#FFFFFF" />
+  <circle cx="305" cy="235" r="3.5" fill="#FFFFFF" />
+  <circle cx="292" cy="250" r="3.5" fill="#FFFFFF" />
+
+  <!-- Central Emblem Elements -->
+  <!-- Golden Cross -->
+  <!-- Vertical Beam -->
+  <rect x="196" y="132" width="8" height="118" fill="url(#gold-grad)" rx="1.5" />
+  <!-- Horizontal Beam -->
+  <rect x="162" y="158" width="76" height="7.5" fill="url(#gold-grad)" rx="1.5" />
+
+  <!-- UT and LA Typography -->
+  <!-- UT text on the left -->
+  <text x="162" y="218" font-family="'Times New Roman', 'Playfair Display', Georgia, serif" font-size="44" font-weight="900" fill="#FFFFFF" text-anchor="end" letter-spacing="-1">
+    UT
+  </text>
+
+  <!-- LA text on the right -->
+  <text x="238" y="218" font-family="'Times New Roman', 'Playfair Display', Georgia, serif" font-size="44" font-weight="900" fill="#FFFFFF" text-anchor="start" letter-spacing="-1">
+    LA
+  </text>
+
+  <!-- Open Bible at bottom of cross -->
+  <g stroke="#FFFFFF" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Left page upper curve -->
+    <path d="M 200 252 C 182 240, 160 236, 145 250 C 146 256, 175 250, 200 262" />
+    <!-- Right page upper curve -->
+    <path d="M 200 252 C 218 240, 240 236, 255 250 C 254 256, 225 250, 200 262" />
+    <!-- Left page lower curve -->
+    <path d="M 152 254 C 168 266, 186 264, 200 268" />
+    <!-- Right page lower curve -->
+    <path d="M 248 254 C 232 266, 214 264, 200 268" />
+  </g>
+</svg>
